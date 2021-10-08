@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  
+ <header>
+   <h1 class="heading">calc</h1>
+   <div class="theme-tab">
+     <span id="themeTitle">THEME</span>
+     <div id="themeTab">
+     <ul>
+       <li>1</li>
+       <li>2</li>
+       <li>3</li>
+     </ul>
+     <div id="themeChoser" onclick="switchThemes(event)">
+       <div id="themeToggler"></div>
+     </div>
+     </div>
+   </div>
+ </header>  
+
+
+ <main style="clear: both;">
+   <div class="screen">
+     <span id="calcScreen">0</span>
+     <div id="errorMsg"></div>
+   </div>
+  <div class="keypad">
+    <div class="num-key" onclick="readKeys('7')">7</div>
+    <div class="num-key" onclick="readKeys('8')">8</div>
+    <div class="num-key" onclick="readKeys('9')">9</div>
+    <div class="num-key small-num-key" onclick="readKeys('del')">DEL</div>
+    <div class="num-key" onclick="readKeys('4')">4</div>
+    <div class="num-key" onclick="readKeys('5')">5</div>
+    <div class="num-key" onclick="readKeys('6')">6</div>
+    <div class="num-key" onclick="readKeys('+')">+</div>
+    <div class="num-key" onclick="readKeys('1')">1</div>
+    <div class="num-key" onclick="readKeys('2')">2</div>
+    <div class="num-key" onclick="readKeys('3')">3</div>
+    <div class="num-key" onclick="readKeys('-')">-</div>
+    <div class="num-key" onclick="readKeys('.')">.</div>
+    <div class="num-key" onclick="readKeys('0')">0</div>
+    <div class="num-key" onclick="readKeys('/')">/</div>
+    <div class="num-key" onclick="readKeys('*')">x</div>
+    <div style="grid-column-start: 1; grid-column-end: 3;" class="num-key small-num-key" onclick="readKeys('res')">RESET</div>
+    <div id="equalsKey" style="grid-column-start: 3; grid-column-end: 5;" class="num-key small-num-key" onclick="readKeys('=')">=</div>
+  </div>
+ </main>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://micoder.me" target="_blank">Michael Akin</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

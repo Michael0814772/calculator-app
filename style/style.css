@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    background: hsl(222, 26%, 31%); 
+    margin: auto;
+    width: 35em;
+}
+
+.heading {
+    float: left;
+    margin: 32px auto;
+}
+
+.theme-tab {
+    float: right;
+    align-items: center;
+    font-size: 10px;
+    padding-top: 15px;
+}
+
+#themeTitle {
+    letter-spacing: 1px;
+    width: fit-content;
+    float: left;
+    padding-top: 3.9em;
+    padding-right: 25px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0 9px;
+    margin: 0;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+li {
+    float: left;
+}
+
+#themeTab {
+    float: left;
+    padding-top: 15px;
+}
+
+#themeChoser {
+    width: 60px;
+    height: 23px;
+    border-radius: 20px;
+    padding: 4px 5px;
+    overflow: hidden;
+}
+
+#themeToggler {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 0px;
+    transition: margin-left .5s;
+}
+
+.screen {
+    width: 100%;
+    height: 96px;
+    border-radius: 15px;
+    font-size: 32px;
+    text-align: right;
+    padding: 30px 25px;
+}
+
+#errorMsg {
+    font-size: 12px;
+    color: hsl(6, 63%, 50%);
+    float: left;
+    position: absolute;
+}
+
+.keypad {
+    width: 100%;
+    margin-top: 2em;
+    height: 30rem;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.num-key {
+    padding-top: 5px;
+    height: 65px;
+    font-size: 1.7em;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.num-key:hover {
+    cursor: pointer;
+}
+
+.num-key:active {
+    transform: translateY(1.5px);
+}
+
+.small-num-key {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 90%;
+        margin: auto 20px;
+    }
+    .num-key {
+        margin: 6px;
+    }
+}
+
+.attribution { 
+    margin-top: 32px;
+    font-size: 11px;
+    text-align: center;
+    clear: both;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
